@@ -1,0 +1,131 @@
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\AudioPlayer.jsx[24m[0m
+[0m  [2m10:9[22m  [31merror[39m  Error: This value cannot be modified[0m
+[0m[0m
+[0mModifying a value returned from 'useState()', which should not be modified directly. Use the setter function to update instead.[0m
+[0m[0m
+[0m   8 |[0m
+[0m   9 |     useEffect(() => {[0m
+[0m> 10 |         audio.loop = true;[0m
+[0m     |         ^^^^^ `audio` cannot be modified[0m
+[0m  11 |         return () => {[0m
+[0m  12 |             audio.pause();[0m
+[0m  13 |         };  [2mreact-hooks/immutability[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\BackgroundDecoration.jsx[24m[0m
+[0m   [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [2mno-unused-vars[22m[0m
+[0m  [2m18:40[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  16 |             return {[0m
+[0m  17 |                 id: i,[0m
+[0m> 18 |                 type: types[Math.floor(Math.random() * types.length)],[0m
+[0m     |                                        ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  19 |                 x: Math.random() * 100, // percentage[0m
+[0m  20 |                 y: Math.random() * 100, // percentage[0m
+[0m  21 |                 size: Math.random() * 12 + 6, // 6 to 18px                                            [2mreact-hooks/purity[22m[0m
+[0m  [2m19:20[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  17 |                 id: i,[0m
+[0m  18 |                 type: types[Math.floor(Math.random() * types.length)],[0m
+[0m> 19 |                 x: Math.random() * 100, // percentage[0m
+[0m     |                    ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  20 |                 y: Math.random() * 100, // percentage[0m
+[0m  21 |                 size: Math.random() * 12 + 6, // 6 to 18px[0m
+[0m  22 |                 duration: Math.random() * 15 + 12, // 12 to 27s                     [2mreact-hooks/purity[22m[0m
+[0m  [2m20:20[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  18 |                 type: types[Math.floor(Math.random() * types.length)],[0m
+[0m  19 |                 x: Math.random() * 100, // percentage[0m
+[0m> 20 |                 y: Math.random() * 100, // percentage[0m
+[0m     |                    ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  21 |                 size: Math.random() * 12 + 6, // 6 to 18px[0m
+[0m  22 |                 duration: Math.random() * 15 + 12, // 12 to 27s[0m
+[0m  23 |                 delay: Math.random() * 5,  [2mreact-hooks/purity[22m[0m
+[0m  [2m21:23[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  19 |                 x: Math.random() * 100, // percentage[0m
+[0m  20 |                 y: Math.random() * 100, // percentage[0m
+[0m> 21 |                 size: Math.random() * 12 + 6, // 6 to 18px[0m
+[0m     |                       ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  22 |                 duration: Math.random() * 15 + 12, // 12 to 27s[0m
+[0m  23 |                 delay: Math.random() * 5,[0m
+[0m  24 |                 rotation: Math.random() * 360,                       [2mreact-hooks/purity[22m[0m
+[0m  [2m22:27[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  20 |                 y: Math.random() * 100, // percentage[0m
+[0m  21 |                 size: Math.random() * 12 + 6, // 6 to 18px[0m
+[0m> 22 |                 duration: Math.random() * 15 + 12, // 12 to 27s[0m
+[0m     |                           ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  23 |                 delay: Math.random() * 5,[0m
+[0m  24 |                 rotation: Math.random() * 360,[0m
+[0m  25 |                 xOffset: Math.random() * 40 - 20,                       [2mreact-hooks/purity[22m[0m
+[0m  [2m23:24[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  21 |                 size: Math.random() * 12 + 6, // 6 to 18px[0m
+[0m  22 |                 duration: Math.random() * 15 + 12, // 12 to 27s[0m
+[0m> 23 |                 delay: Math.random() * 5,[0m
+[0m     |                        ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  24 |                 rotation: Math.random() * 360,[0m
+[0m  25 |                 xOffset: Math.random() * 40 - 20,[0m
+[0m  26 |             }                                                                  [2mreact-hooks/purity[22m[0m
+[0m  [2m24:27[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  22 |                 duration: Math.random() * 15 + 12, // 12 to 27s[0m
+[0m  23 |                 delay: Math.random() * 5,[0m
+[0m> 24 |                 rotation: Math.random() * 360,[0m
+[0m     |                           ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  25 |                 xOffset: Math.random() * 40 - 20,[0m
+[0m  26 |             }[0m
+[0m  27 |         });                                                                                                              [2mreact-hooks/purity[22m[0m
+[0m  [2m25:26[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0m  23 |                 delay: Math.random() * 5,[0m
+[0m  24 |                 rotation: Math.random() * 360,[0m
+[0m> 25 |                 xOffset: Math.random() * 40 - 20,[0m
+[0m     |                          ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  26 |             }[0m
+[0m  27 |         });[0m
+[0m  28 |     }, []);                                                                                                                                                                   [2mreact-hooks/purity[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\FinalSurprise.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\HeartfeltLetter.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\Hero.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\PreciousMoments.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\Preloader.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\Reasons.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\Timeline.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\bhanu\OneDrive\Desktop\bd\src\components\Wishes.jsx[24m[0m
+[0m  [2m2:10[22m  [31merror[39m  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[31m[1m✖ 18 problems (18 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

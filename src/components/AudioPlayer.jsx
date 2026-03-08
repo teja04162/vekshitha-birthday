@@ -4,10 +4,13 @@ import { siteData } from '../data';
 
 export default function AudioPlayer() {
     const [isPlaying, setIsPlaying] = useState(false);
-    const [audio] = useState(new Audio(siteData.backgroundMusicSrc));
+    const [audio] = useState(() => {
+        const a = new Audio(siteData.backgroundMusicSrc);
+        a.loop = true;
+        return a;
+    });
 
     useEffect(() => {
-        audio.loop = true;
         return () => {
             audio.pause();
         };

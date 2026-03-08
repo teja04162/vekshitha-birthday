@@ -43,18 +43,22 @@ export const siteData = {
 
     // Timeline
     timeline: [
-        { year: "The Beginning", event: "The day my world changed for the better." },
-        { year: "Childhood Days", event: "Countless games, shared secrets, and infinite laughter." },
-        { year: "Growing Up", event: "Facing life's challenges together side by side." },
-        { year: "Today", event: "Celebrating the incredible woman you have become." }
+        { year: "The Beginning", event: "The day my world changed for the better when you arrived." },
+        { year: "Childhood Days", event: "Countless games, innocent secrets, and infinite laughter we shared." },
+        { year: "Teenage Years", event: "Navigating life's ups and downs together, knowing we always had each other's back." },
+        { year: "Growing Up", event: "Facing challenges side by side, building a beautiful and unbreakable bond." },
+        { year: "Precious Memories", event: "Every late-night talk, shared dream, and quiet moment of understanding we hold dear." },
+        { year: "Today", event: "Celebrating the incredible, strong, and beautiful woman you have become." }
     ],
 
     // Wishes
     wishes: [
-        "May your day be as beautiful as your soul.",
-        "Wishing you endless happiness and success.",
-        "May all your wildest dreams come true this year.",
-        "Keep shining your beautiful light!"
+        "May your day be as beautiful, kind, and radiant as your soul.",
+        "Wishing you endless happiness, peace, and unimagined success.",
+        "May every single one of your wildest dreams come true this year.",
+        "Keep shining your wonderful light; the world needs it.",
+        "I hope this year brings you as much joy as you give to others.",
+        "May you always find reasons to smile and courage to fly high."
     ],
 
     // Final Surprise
