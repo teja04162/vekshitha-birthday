@@ -63,6 +63,8 @@ export default function Hero({ onExplore }) {
                 <Sparkles className="absolute top-8 left-8 text-rose-300 w-8 h-8 animate-pulse" />
                 <Sparkles className="absolute bottom-8 right-8 text-purple-300 w-6 h-6 animate-pulse delay-700" />
 
+
+
                 <motion.h1
                     className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-purple-500 to-rose-400 mb-6 drop-shadow-md leading-tight"
                     initial="hidden"
@@ -92,7 +94,7 @@ export default function Hero({ onExplore }) {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 1.2, staggerChildren: 0.1 }}
-                    className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12"
+                    className="flex flex-wrap justify-center gap-4 md:gap-8 mb-16"
                 >
                     {timeBlocks.map((block, i) => (
                         <motion.div
@@ -121,12 +123,61 @@ export default function Hero({ onExplore }) {
                     ))}
                 </motion.div>
 
+                {/* Lovely Profile Image - Placed Prominently Below Countdown */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+                    animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                    transition={{ duration: 1.2, delay: 1.5, type: 'spring', bounce: 0.5 }}
+                    className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-16 group"
+                >
+                    {/* Glowing background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-rose-400 via-pink-400 to-amber-300 rounded-full animate-spin-slow blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-700" />
+
+                    {/* Image Container with Glassmorphism Border */}
+                    <div className="relative w-full h-full rounded-full border-[8px] md:border-[12px] border-white/80 shadow-[0_30px_60px_-15px_rgba(251,113,133,0.6)] overflow-hidden backdrop-blur-sm z-10">
+                        <img
+                            src="/ammu.jpeg"
+                            alt="Beautiful moment"
+                            className="w-full h-full object-contain transform transition-transform duration-1000 group-hover:scale-110 bg-black/5"
+                            onError={(e) => {
+                                e.target.onerror = null;
+                                e.target.src = "https://images.unsplash.com/photo-1518199266791-5375a83164ba?q=80&w=400&auto=format&fit=crop";
+                            }}
+                        />
+                        {/* Shimmer overlay on image */}
+                        <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/20 to-transparent mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                    </div>
+
+                    {/* Floating decorative elements */}
+                    <motion.div
+                        animate={{ y: [-15, 10, -15], rotate: [-15, 15, -15], scale: [1, 1.1, 1] }}
+                        transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                        className="absolute -right-6 top-8 text-4xl md:text-5xl drop-shadow-xl z-20"
+                    >
+                        ❤️
+                    </motion.div>
+                    <motion.div
+                        animate={{ y: [10, -15, 10], rotate: [15, -15, 15], scale: [1, 1.2, 1] }}
+                        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
+                        className="absolute -left-4 bottom-10 text-4xl drop-shadow-xl z-20 text-rose-300"
+                    >
+                        <Sparkles size={40} className="fill-current" />
+                    </motion.div>
+                    <motion.div
+                        animate={{ y: [-8, 8, -8], rotate: [-10, 10, -10] }}
+                        transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 2 }}
+                        className="absolute right-4 -bottom-4 text-3xl drop-shadow-xl z-20"
+                    >
+                        ✨
+                    </motion.div>
+                </motion.div>
+
                 <motion.button
                     onClick={onExplore}
-                    className="px-8 py-4 bg-gradient-to-r from-rose-500 to-rose-400 text-white font-body text-xl rounded-full shadow-[0_10px_30px_-10px_rgba(251,113,133,0.8)] hover:shadow-[0_10px_40px_-10px_rgba(251,113,133,1)] transition-all duration-300 relative overflow-hidden group font-medium"
+                    className="px-8 py-4 bg-gradient-to-r from-rose-500 to-rose-400 text-white font-body text-xl md:text-2xl rounded-full shadow-[0_10px_30px_-10px_rgba(251,113,133,0.8)] hover:shadow-[0_15px_40px_-10px_rgba(251,113,133,1)] transition-all duration-300 relative overflow-hidden group font-medium z-20"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 1.5 }}
+                    transition={{ duration: 0.8, delay: 2 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
