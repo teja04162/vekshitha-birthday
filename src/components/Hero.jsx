@@ -172,22 +172,6 @@ export default function Hero({ onExplore }) {
                     </motion.div>
                 </motion.div>
 
-                <motion.button
-                    onClick={onExplore}
-                    className="px-8 py-4 bg-gradient-to-r from-rose-500 to-rose-400 text-white font-body text-xl md:text-2xl rounded-full shadow-[0_10px_30px_-10px_rgba(251,113,133,0.8)] hover:shadow-[0_15px_40px_-10px_rgba(251,113,133,1)] transition-all duration-300 relative overflow-hidden group font-medium z-20"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 2 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <span className="relative z-10 flex items-center gap-3">
-                        {siteData.hero.buttonText}
-                        <ArrowDown className="w-5 h-5 animate-bounce" />
-                    </span>
-                    {/* Shine effect */}
-                    <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
-                </motion.button>
             </motion.div>
         </section>
     );

@@ -4,6 +4,7 @@ import AudioPlayer from './components/AudioPlayer';
 import BackgroundDecoration from './components/BackgroundDecoration';
 import Hero from './components/Hero';
 import PreciousMoments from './components/PreciousMoments';
+import Gallery from './components/Gallery';
 import HeartfeltLetter from './components/HeartfeltLetter';
 import Reasons from './components/Reasons';
 import Timeline from './components/Timeline';
@@ -33,6 +34,7 @@ function App() {
           <main className="relative flex flex-col items-center">
             <Hero onExplore={handleExplore} />
             <PreciousMoments />
+            <Gallery />
             <HeartfeltLetter />
             <Reasons />
             <Timeline />
